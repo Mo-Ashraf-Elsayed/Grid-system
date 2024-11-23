@@ -1,0 +1,395 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --strangeFont: "Arvo", serif;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h5 {
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.734);
+}
+.p-3rem {
+  padding: 3rem;
+}
+img {
+  width: 100%;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "one two three three"
+    "one two three three"
+    "one two three three"
+    "four five six seven"
+    "four five six seven"
+    "four five six seven"
+    "eight nine nine seven"
+    "eight nine nine seven"
+    "eight nine nine seven"
+    "ten eleven twelve twelve"
+    "ten eleven twelve twelve";
+}
+.parent .paddingForOne {
+  grid-area: one;
+}
+.parent .paddingForOne .one .features {
+  font-family: var(--strangeFont);
+  font-size: 1.4rem;
+  width: 80%;
+}
+.parent .paddingForOne .one .learnMore {
+  width: 80%;
+  color: rgba(128, 128, 128, 0.677);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.parent .paddingForTwo {
+  grid-area: two;
+  padding-bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.parent .paddingForTwo .two {
+  display: flex;
+  justify-content: center;
+}
+.parent .paddingForTwo .two img {
+  width: 90%;
+  position: relative;
+  bottom: -3px;
+}
+.parent .paddingForThree {
+  grid-area: three;
+  background-color: #f8f8f8;
+}
+.parent .paddingForThree .three {
+  text-align: center;
+}
+.parent .paddingForThree h1 {
+  font-size: 2.5rem;
+  font-family: var(--strangeFont);
+  font-weight: 100;
+  width: 70%;
+  margin: 1rem auto 1.5rem;
+}
+.parent .paddingForThree a {
+  text-decoration: underline;
+  color: #55b9c2;
+  font-size: 0.9rem;
+}
+.parent .paddingForFour {
+  grid-area: four;
+  background-color: #f05638;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.parent .paddingForFour .four {
+  text-align: center;
+}
+.parent .paddingForFour .four h2 {
+  color: white;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1.3rem;
+  font-family: var(--strangeFont);
+  font-size: 1.4rem;
+}
+.parent .paddingForFour .four a {
+  color: rgb(251, 191, 10);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.parent .paddingForFive {
+  grid-area: five;
+  padding: 2.5rem 3.5rem 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.parent .paddingForFive .five {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.parent .paddingForFive .five h5 {
+  margin-bottom: 0;
+}
+.parent .paddingForFive .five p {
+  font-family: var(--strangeFont);
+  font-size: 1.3rem;
+  width: 90%;
+  margin-bottom: 1.3rem;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+.parent .paddingForFive .five .photo img {
+  width: 200%;
+  position: relative;
+  left: -120%;
+  bottom: -4px;
+}
+.parent .paddingForSix {
+  grid-area: six;
+  padding-left: 0;
+  padding-right: 0;
+}
+.parent .paddingForSix .six p {
+  color: rgba(128, 128, 128, 0.808);
+  line-height: 1.8;
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  width: 75%;
+}
+.parent .paddingForSix .six a {
+  color: #55b9c2;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+}
+.parent .paddingForSeven {
+  grid-area: seven;
+  background-color: #8f76bc;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.parent .paddingForSeven .seven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.parent .paddingForSeven .seven .circle {
+  background-color: #8166b0;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1.5rem;
+}
+.parent .paddingForSeven .seven .circle button {
+  background-color: #8f76bc;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.parent .paddingForSeven .seven .circle button i {
+  color: gold;
+}
+.parent .paddingForSeven .seven .circle .diskImg {
+  width: 70%;
+  margin: 1rem auto 0;
+}
+.parent .paddingForSeven .seven .circle h6 {
+  margin: 0.5rem;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+.parent .paddingForSeven .seven h3 {
+  font-family: var(--strangeFont);
+  font-size: 2rem;
+  color: white;
+  margin: 1.5rem;
+}
+.parent .paddingForSeven .seven p {
+  width: 80%;
+  margin: auto auto 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: white;
+}
+.parent .paddingForSeven .seven a {
+  background-color: gold;
+  color: black;
+  padding: 1rem;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.parent .paddingForEight {
+  grid-area: eight;
+  text-align: center;
+  background-color: #f7f8f9;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.parent .paddingForEight .eight img {
+  position: relative;
+  left: -25px;
+}
+.parent .paddingForEight .eight p {
+  font-family: var(--strangeFont);
+  font-size: 1.2rem;
+  margin-top: 0;
+  width: 80%;
+  margin: 1rem auto;
+}
+.parent .paddingForEight .eight a {
+  font-size: 0.7rem;
+  color: #55b9c2;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.parent .paddingForNine {
+  grid-area: nine;
+  padding: 2rem 2rem 0;
+  background-color: #93b6b7;
+  overflow: hidden;
+}
+.parent .paddingForNine .nine {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.parent .paddingForNine .nine button {
+  background-color: #fa684f;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  align-self: flex-start;
+}
+.parent .paddingForNine .nine p {
+  color: white;
+  text-align: center;
+  width: 40%;
+  margin: 2rem auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: var(--strangeFont);
+}
+.parent .paddingForNine .nine .iPadImg {
+  width: 100%;
+  position: relative;
+}
+.parent .paddingForNine .nine .iPadImg::after {
+  content: "UK";
+  font-size: 15rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #8baaab;
+  font-weight: bold;
+  font-family: var(--strangeFont);
+  position: absolute;
+  top: -45px;
+  left: 0;
+  z-index: 2;
+  transform: scale(1.4);
+}
+.parent .paddingForNine .nine .iPadImg img {
+  width: 100%;
+  position: relative;
+  left: -10%;
+  bottom: -5px;
+  z-index: 3;
+}
+.parent .paddingForTen {
+  grid-area: ten;
+  background-color: #38d5f4;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent .paddingForTen .ten .circle {
+  background-color: #35cfed;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.parent .paddingForTen .ten .circle .twitterImg {
+  width: 20%;
+  margin: 0.2rem auto;
+}
+.parent .paddingForTen .ten .circle p {
+  font-family: var(--strangeFont);
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 0.2rem auto;
+  color: white;
+}
+.parent .paddingForEleven {
+  grid-area: eleven;
+  background-color: #f7f8f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent .paddingForEleven .eleven {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.parent .paddingForEleven .eleven button {
+  background-color: #7bc424;
+  color: white;
+  font-size: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.25rem 0.4rem;
+  letter-spacing: 0.15rem;
+}
+.parent .paddingForEleven .eleven p {
+  font-family: var(--strangeFont);
+  width: 90%;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+}
+.parent .paddingForTwelve {
+  grid-area: twelve;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+}
+.parent .paddingForTwelve .twelve {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.parent .paddingForTwelve .tvImg {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent .paddingForTwelve .tvImg img {
+  width: 80%;
+}
+.parent .paddingForTwelve p {
+  width: 35%;
+  color: white;
+  font-family: var(--strangeFont);
+  font-size: 1.4rem;
+}

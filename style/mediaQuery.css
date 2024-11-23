@@ -1,0 +1,227 @@
+@media screen and (max-width: 1200px) {
+  .parent .paddingForOne .one .features {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .parent .paddingForTwo .two img {
+    width: 100%;
+  }
+  .parent .paddingForThree h1 {
+    font-size: 2rem;
+  }
+  .parent .paddingForFive .five p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .parent .paddingForNine .nine .iPadImg::after {
+    font-size: 14rem;
+    top: -60px;
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "three three"
+      "three three"
+      "one two"
+      "one two"
+      "one two"
+      "four eight"
+      "four eight"
+      "four eight"
+      "five six"
+      "five six"
+      "five six"
+      "ten seven"
+      "ten seven"
+      "ten seven"
+      "nine seven"
+      "nine seven"
+      "nine seven"
+      "eleven eleven"
+      "twelve twelve"
+      "twelve twelve";
+  }
+  .parent .paddingForTwo .two img {
+    width: 60%;
+  }
+  .parent .paddingForFour .four h2 {
+    width: 70%;
+    font-size: 1.4rem;
+  }
+  .parent .paddingForFive .five p {
+    width: 75%;
+  }
+  .parent .paddingForFive .five .photo img {
+    width: 150%;
+    left: -90%;
+  }
+  .parent .paddingForSeven {
+    padding-bottom: 3rem;
+  }
+  .parent .paddingForNine .nine .iPadImg img {
+    bottom: -30px;
+  }
+  .parent .paddingForNine .nine .iPadImg::after {
+    font-size: 13rem;
+    top: -30px;
+    transform: scale(1.2);
+  }
+  .parent .paddingForNine .nine p {
+    width: 65%;
+    font-size: 1.4rem;
+  }
+  .parent .paddingForEleven {
+    padding: 2rem 0;
+  }
+  .parent .paddingForEleven .eleven p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parent .paddingForThree h1 {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+  .parent .paddingForOne .one .features {
+    font-size: 1.1rem;
+  }
+  .parent .paddingForTwo .two img {
+    width: 85%;
+  }
+  .parent .paddingForFive .five p {
+    width: 100%;
+  }
+  .parent .paddingForNine .nine .iPadImg::after {
+    font-size: 11rem;
+    top: -15px;
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 520px) {
+  .parent .paddingForTwo .two img {
+    width: 100%;
+  }
+  .parent .paddingForFour .four h2 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .parent .paddingForFive .five .photo img {
+    width: 200%;
+    left: -120%;
+  }
+  .parent .paddingForNine .nine p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .parent .paddingForTwelve p {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .parent {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "three"
+      "three"
+      "three"
+      "one"
+      "one"
+      "two"
+      "two"
+      "two"
+      "four"
+      "four"
+      "eight"
+      "eight"
+      "five"
+      "five"
+      "five"
+      "six"
+      "six"
+      "ten"
+      "ten"
+      "nine"
+      "nine"
+      "seven"
+      "seven"
+      "seven"
+      "seven"
+      "eleven"
+      "twelve"
+      "twelve"
+      "twelve";
+  }
+  .parent .paddingForThree {
+    padding: 3rem 1rem;
+  }
+  .parent .paddingForThree h1 {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+  .parent .paddingForSix {
+    padding: 3rem 1rem;
+  }
+  .parent .paddingForSix .six p {
+    width: 100%;
+  }
+  .parent .paddingForEight {
+    padding: 3rem;
+  }
+  .parent .paddingForNine .nine .iPadImg::after {
+    font-size: 12rem;
+    top: -40px;
+    transform: scale(1.2);
+  }
+  .parent .paddingForNine .nine .iPadImg img {
+    width: 100%;
+    position: relative;
+    left: -10%;
+    bottom: -2px;
+    z-index: 3;
+  }
+  .parent .paddingForTwelve .twelve {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 2rem;
+  }
+  .parent .paddingForTwelve .tvImg {
+    width: 70%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-around;
+  }
+  .parent .paddingForTwelve .tvImg img {
+    width: 80%;
+  }
+  .parent .paddingForTwelve p {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .parent .paddingForNine .nine .iPadImg::after {
+    font-size: 10rem;
+    top: -50px;
+    transform: scale(1.1);
+  }
+  .parent .paddingForNine .nine .iPadImg img {
+    width: 100%;
+    position: relative;
+    left: -10%;
+    bottom: -2px;
+    z-index: 3;
+  }
+  .parent .paddingForTwelve .tvImg {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .parent .paddingForTwelve .tvImg img {
+    width: 70%;
+  }
+}
